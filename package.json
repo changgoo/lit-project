@@ -1,0 +1,1 @@
+{"name":"lit-project","version":"0.1.0","private":true,"type":"module","scripts":{"dev":"astro dev","build":"npm run validate:catalog && astro build","preview":"astro preview","check":"astro check","validate:catalog":"node scripts/validate-catalog.mjs"},"dependencies":{"astro":"7.2.10"},"devDependencies":{"@astrojs/check":"0.9.10","typescript":"6.0.3"},"engines":{"node":">=24"}}
