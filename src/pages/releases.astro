@@ -1,4 +1,16 @@
 ---
 import Base from "../layouts/Base.astro";
+import catalog from "../../catalog/releases.json";
+const release=catalog.releases[0];
+const s=release.summary;
+const box=s.box_pc.join(" × ");
+const grid=s.grid_cells.join(" × ");
 ---
-<Base title="Releases"><section class="page-hero"><p class="eyebrow">Versioned data</p><h1>Releases</h1><p>Published releases will be immutable, citable, checksummed, and linked to read-only Globus paths.</p></section><section class="section"><article class="release"><div><span class="badge">Planned</span><p class="eyebrow dark">Core suite</p><h2>tncr-core-v1.0.0</h2><p>Provisional release of metadata, compact products, and the raw 3D and 2D outputs. Scope, license, DOI, schema, and Globus stewardship are not approved.</p></div><dl><div><dt>Models</dt><dd>40 planned</dd></div><div><dt>Payload</dt><dd>Core outputs and 3D snapshots</dd></div><div><dt>Globus</dt><dd>Not connected</dd></div><div><dt>DOI</dt><dd>Pending</dd></div></dl></article></section></Base>
+<Base title="Releases"><section class="page-hero"><p class="eyebrow">Versioned data</p><h1>Releases</h1><p>Published releases will be immutable, citable, checksummed, and linked to read-only Globus paths.</p></section>
+<section class="section"><article class="release"><div><span class="badge">Planned</span><p class="eyebrow dark">Core suite</p><h2>{release.release_id}</h2><p>{release.status_note}</p></div><dl><div><dt>Models</dt><dd>{release.model_count} planned</dd></div><div><dt>Payload</dt><dd>Core outputs and 3D snapshots</dd></div><div><dt>Globus</dt><dd>{release.globus_collection_id ?? "Not connected"}</dd></div><div><dt>DOI</dt><dd>{release.doi ?? "Pending"}</dd></div><div><dt>Licence</dt><dd>{release.license ?? "Not decided"}</dd></div><div><dt>3D total</dt><dd>≈{s.suite_3d_tb_estimate} TB (estimate)</dd></div></dl></article></section>
+<section class="section summary" id="summary"><div class="intro"><p class="eyebrow dark">Data summary</p><h2>What each model provides</h2><p>{s.suite}. Every model has identical output products.</p></div>
+<dl class="facts"><div><dt>Resolution</dt><dd>{s.resolution_pc} pc</dd></div><div><dt>Grid</dt><dd>{grid} cells</dd></div><div><dt>Box</dt><dd>{box} pc</dd></div><div><dt>Time span</dt><dd>t = 0–{s.end_time_code} (1 unit = {s.code_time_myr} Myr)</dd></div></dl>
+<div class="table"><table><caption>Released products per model. Cadence is in code time units. {s.size_basis}</caption><thead><tr><th scope="col">Product</th><th scope="col">Contents</th><th scope="col">Cadence</th><th scope="col">Format</th><th scope="col">Size per model</th></tr></thead><tbody>{s.products.map(p=><tr><th scope="row">{p.product}</th><td>{p.contents}</td><td>{p.cadence}</td><td>{p.format}</td><td>{p.size_per_model}</td></tr>)}</tbody></table></div>
+<div class="cards notes"><article><h3>Conventions</h3><p>{s.units}</p><p>{s.numbering}</p></article><article><h3>Passive scalars</h3><ul>{s.passive_scalars.map(p=><li><b>Scalar {p.index}</b> ({p.name}): {p.meaning}.</li>)}</ul></article><article><h3>Not included</h3><ul>{s.excluded.map(x=><li>{x}</li>)}</ul></article></div>
+<p class="fixture">{s.formats} <a href={import.meta.env.BASE_URL+"documentation/#formats"}>Formats documentation</a>.</p>
+</section></Base>

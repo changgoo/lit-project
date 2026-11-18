@@ -1,1 +1,118 @@
-{"catalog_version":"0.1.0-prototype","notice":"Synthetic fixture only; no public data release exists.","releases":[{"release_id":"tncr-core-v1.0.0","status":"planned","model_count":40,"globus_collection_id":null,"doi":null}]}
+{
+ "catalog_version": "0.1.0-prototype",
+ "notice": "Model records in src/data/models.json are synthetic fixtures. No public data release exists yet; release entries describe a provisional plan.",
+ "releases": [
+  {
+   "release_id": "tncr-core-v1.0.0",
+   "status": "planned",
+   "model_count": 40,
+   "globus_collection_id": null,
+   "doi": null,
+   "status_note": "Provisional. Conversion to the release formats is in progress. Licence, DOI, and hosting are not yet decided.",
+   "license": null,
+   "summary": {
+    "suite": "Core Sgas10 environmental suite (TIGRESS-NCR, fixed microphysics)",
+    "resolution_pc": 8,
+    "grid_cells": [
+     128,
+     128,
+     512
+    ],
+    "box_pc": [
+     1024,
+     1024,
+     4096
+    ],
+    "end_time_code": 700,
+    "code_time_myr": 0.978,
+    "units": "Hydrogen number density n_H in cm^-3, lengths in pc, velocities in km/s, time in code units of 1 pc/(km/s) = 0.978 Myr.",
+    "numbering": "File number = output time / cadence, so 3D snapshot 0050 is t = 500.",
+    "size_basis": "Planned estimates per model, before final conversion.",
+    "suite_3d_tb_estimate": 1.0,
+    "products": [
+     {
+      "product": "Global history",
+      "contents": "78 global and 18×99 phase-resolved time series",
+      "cadence": "0.1",
+      "format": "Athena++ history (.hst)",
+      "size_per_model": "0.34 GB"
+     },
+     {
+      "product": "Supernova log",
+      "contents": "Time, cluster and explosion position, ambient state, runaway flag",
+      "cadence": "every event",
+      "format": "CSV",
+      "size_per_model": "16 MB"
+     },
+     {
+      "product": "Star particles",
+      "contents": "Mass, age, position, velocity, metal masses, role flag",
+      "cadence": "1",
+      "format": "HDF5 table",
+      "size_per_model": "23 MB"
+     },
+     {
+      "product": "3D snapshots",
+      "contents": "20 fields: n_H, v, P, B, Φ, T, rates, radiation, Z, f_ej, x_HI, x_H2, x_e",
+      "cadence": "10 (t ≥ 200)",
+      "format": "Athena++ HDF5 (.athdf + .xdmf)",
+      "size_per_model": "25 GB"
+     },
+     {
+      "product": "Face-on projections",
+      "contents": "17 column-density, emission-measure, kinematic, and magnetic maps",
+      "cadence": "1",
+      "format": "Athena++ HDF5 (2D)",
+      "size_per_model": "0.8 GB"
+     },
+     {
+      "product": "Inclined projections",
+      "contents": "The same maps at θ = 15°, 30°, 45°, 60°",
+      "cadence": "1",
+      "format": "Athena++ HDF5 (2D)",
+      "size_per_model": "3.0 GB"
+     },
+     {
+      "product": "Midplane slices",
+      "contents": "x = 0, y = 0, z = 0 planes of the primitive and chemical fields",
+      "cadence": "1",
+      "format": "Athena++ HDF5 (2D)",
+      "size_per_model": "6 GB"
+     },
+     {
+      "product": "Vertical profiles",
+      "contents": "149 horizontally averaged quantities for the whole box and 14 phases",
+      "cadence": "1",
+      "format": "CSV",
+      "size_per_model": "4.6 GB"
+     },
+     {
+      "product": "Phase diagrams",
+      "contents": "n–P histograms weighted by volume, mass, species, and heating/cooling channels",
+      "cadence": "1",
+      "format": "HDF5",
+      "size_per_model": "0.3 GB"
+     }
+    ],
+    "formats": "Gridded outputs follow the Athena++ HDF5 layout: one mesh block per original tile and an XDMF companion. Primitive variables, the gravitational potential, and the passive scalars are in the prim dataset, the cell-centred magnetic field in B, and all other fields in user_out_var. The standard Athena++ reader (athena_read), yt, VisIt, and ParaView open them without a custom loader.",
+    "passive_scalars": [
+     {
+      "index": 0,
+      "name": "Z",
+      "meaning": "Gas metallicity, initialized at solar and enriched by supernova ejecta"
+     },
+     {
+      "index": 1,
+      "name": "f_ej",
+      "meaning": "Mass fraction of supernova ejecta"
+     }
+    ],
+    "excluded": [
+     "Duplicate outputs written at simulation restarts (removed so file numbers follow time).",
+     "Position-binned histograms and density–temperature phase diagrams, which failed consistency checks.",
+     "Analysis caches and project-derived products."
+    ]
+   }
+  }
+ ]
+}
