@@ -12,10 +12,14 @@ const statuses=new Set(["planned","provisional","published"]);
 const productFields=["product","contents","cadence","format","size_per_model"];
 if(!Array.isArray(catalog.releases)||!catalog.releases.length)throw new Error("releases must be non-empty.");
 for(const r of catalog.releases){
-  for(const f of ["release_id","status","model_count","globus_collection_id","doi","license"])if(!(f in r))throw new Error(r.release_id+" missing "+f);
+  for(const f of ["release_id","status","model_count","globus_collection_id","doi","license","code_license"])if(!(f in r))throw new Error(r.release_id+" missing "+f);
   if(!statuses.has(r.status))throw new Error(r.release_id+" invalid status "+r.status);
   if(!Number.isInteger(r.model_count)||r.model_count<=0)throw new Error(r.release_id+" invalid model_count");
-  if(r.status!=="published"&&(r.doi!==null||r.license!==null))throw new Error(r.release_id+": DOI and licence stay null until publication");
+  if(r.status!=="published"&&r.doi!==null)throw new Error(r.release_id+": DOI stays null until publication");
+  const dataLicenses=new Set(["CC-BY-4.0","CC0-1.0"]),codeLicenses=new Set(["BSD-3-Clause","MIT"]);
+  if(r.license!==null&&!dataLicenses.has(r.license))throw new Error(r.release_id+" unknown data licence "+r.license);
+  if(r.code_license!==null&&!codeLicenses.has(r.code_license))throw new Error(r.release_id+" unknown code licence "+r.code_license);
+  if(r.status==="published"&&(r.doi===null||r.license===null))throw new Error(r.release_id+": a published release needs a DOI and a licence");
   const s=r.summary;if(!s)continue;
   for(const f of ["grid_cells","box_pc"])if(!Array.isArray(s[f])||s[f].length!==3||!s[f].every(v=>Number.isInteger(v)&&v>0))throw new Error(r.release_id+" invalid "+f);
   for(const f of ["resolution_pc","end_time_code","code_time_myr"])if(!Number.isFinite(s[f])||s[f]<=0)throw new Error(r.release_id+" invalid "+f);

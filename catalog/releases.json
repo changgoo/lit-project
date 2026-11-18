@@ -8,8 +8,9 @@
    "model_count": 40,
    "globus_collection_id": null,
    "doi": null,
-   "status_note": "Provisional. Conversion to the release formats is in progress. Licence, DOI, and hosting are not yet decided.",
-   "license": null,
+   "status_note": "Provisional. Conversion to the release formats is in progress. Data are licensed CC BY 4.0 and the accompanying code BSD-3-Clause; the DOI and hosting are not yet decided.",
+   "license": "CC-BY-4.0",
+   "code_license": "BSD-3-Clause",
    "summary": {
     "suite": "Core Sgas10 environmental suite (TIGRESS-NCR, fixed microphysics)",
     "resolution_pc": 8,
