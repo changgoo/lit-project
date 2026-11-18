@@ -28,7 +28,7 @@ const points=models.map(m=>({x:px(m.sigmaGas),y:py(m.omega),short:m.label.replac
 </div>
 </section>
 
-<dl class="metrics" aria-label="Release at a glance"><div><dt>Release</dt><dd>v1.0 planned</dd></div><div><dt>Core suite</dt><dd>{release.model_count} models</dd></div><div><dt>Resolution</dt><dd>{s.resolution_pc} pc</dd></div><div><dt>3D total</dt><dd>≈{s.suite_3d_tb_estimate} TB est.</dd></div><div><dt>Citation</dt><dd>{release.doi ?? "DOI pending"}</dd></div></dl>
+<dl class="metrics" aria-label="Release at a glance"><div><dt>Release</dt><dd>v1.0 planned</dd></div><div><dt>Core suite</dt><dd>{release.model_count} models</dd></div><div><dt>Resolution</dt><dd>{s.resolution_pc} pc</dd></div><div><dt>3D total</dt><dd>{s.suite_3d_tb.toFixed(1)} TB</dd></div><div><dt>Citation</dt><dd>{release.doi ?? "DOI pending"}</dd></div></dl>
 
 <section class="section"><div class="intro"><p class="eyebrow">Why LIT?</p><h2>From galactic environment to a living, multiphase ISM</h2><p>The portal will connect every executed environment to analysis-ready products, provenance, and reproducible examples.</p></div>
 <div class="tiles"><article><h3>Vary the environment</h3><p>Compare gas, stellar gravity, rotation, and shear across a controlled suite.</p></article><article><h3>Resolve the cycle</h3><p>Follow radiation, feedback, chemistry, turbulence, and vertical equilibrium.</p></article><article><h3>Analyze reproducibly</h3><p>Use versioned catalogs, checksums, public readers, and examples.</p></article></div></section>
