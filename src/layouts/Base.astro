@@ -4,10 +4,14 @@ interface Props{title:string}
 const {title}=Astro.props;
 const base=import.meta.env.BASE_URL;
 const link=(path:string)=>base+path.replace(/^\//,"");
+const here=Astro.url.pathname;
+const nav=[["/","Overview"],["/explore/","Explore"],["/documentation/","Documentation"],["/releases/","Releases"]];
+const current=(path:string)=>here===link(path)?"page":undefined;
 ---
-<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="description" content="Public TIGRESS-NCR releases from LIT."/><meta name="theme-color" content="#071521"/><link rel="icon" href={link("/favicon.svg")}/><title>{title} · LIT Data</title></head><body>
+<!doctype html><html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width"/><meta name="description" content="LIT up the ISM research: public TIGRESS-NCR releases from LIT."/><meta name="theme-color" content="#060a12"/><link rel="icon" href={link("/favicon.svg")}/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"/><title>{title} · LIT Data</title></head><body>
 <a class="skip" href="#main">Skip to content</a>
-<header><a class="brand" href={link("/")}><b>LIT</b><span><strong>Learning the ISM with TIGRESS</strong><small>Public data portal · prototype</small></span></a><nav><a href={link("/")}>Overview</a><a href={link("/explore/")}>Explore</a><a href={link("/documentation/")}>Documentation</a><a href={link("/releases/")}>Releases</a></nav><a class="button compact" href={link("/releases/")}>Get data</a></header>
+<div class="notice"><b>Design prototype</b><span>Synthetic metadata only · no public payload or DOI yet</span></div>
+<header><a class="brand" href={link("/")}><svg width="38" height="38" viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="16" fill="none" stroke="#6ab0ff" stroke-width="1.5"/><circle cx="18" cy="18" r="9" fill="none" stroke="#e9d46a" stroke-width="1.5"/><circle cx="18" cy="18" r="3" fill="#ff7b4a"/></svg><span><strong>LIT</strong><small>Learning the ISM with TIGRESS</small></span></a><nav aria-label="Main">{nav.map(([path,label])=><a href={link(path)} aria-current={current(path)}>{label}</a>)}</nav><a class="button compact" href={link("/releases/")}>Get data</a></header>
 <main id="main"><slot/></main>
-<footer><div><strong>LIT public data portal</strong><p>Design prototype · no public payload yet</p></div><nav><a href={link("/explore/")}>Explore</a><a href={link("/documentation/")}>Documentation</a><a href={link("/releases/")}>Releases</a></nav></footer>
+<footer><div><strong>LIT public data portal</strong><p>LIT up the ISM research · design prototype, no public payload yet</p></div><nav aria-label="Footer">{nav.slice(1).map(([path,label])=><a href={link(path)}>{label}</a>)}</nav></footer>
 </body></html>

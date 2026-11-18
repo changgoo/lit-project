@@ -1,14 +1,46 @@
 ---
 import Base from "../layouts/Base.astro";
+import models from "../data/models.json";
+import catalog from "../../catalog/releases.json";
 const base=import.meta.env.BASE_URL;
 const link=(path:string)=>base+path.replace(/^\//,"");
+const release=catalog.releases[0];
+const s=release.summary;
+
+// Parameter-space plot: Σgas (x, 0–20) against Ω (y, 0–80), drawn to scale.
+const plot={left:60,right:530,top:30,bottom:300,xMax:20,yMax:80};
+const px=(v:number)=>plot.left+(v/plot.xMax)*(plot.right-plot.left);
+const py=(v:number)=>plot.bottom-(v/plot.yMax)*(plot.bottom-plot.top);
+const xTicks=[0,5,10,15,20];
+const yTicks=[0,20,40,60,80];
+const points=models.map(m=>({x:px(m.sigmaGas),y:py(m.omega),short:m.label.replace(/^Prototype\s+/,""),label:m.label}));
 ---
-<Base title="Public TIGRESS-NCR data">
-<div class="notice"><b>Design prototype</b><span>Synthetic metadata only · no public payload or DOI yet</span></div>
-<section class="hero wrap"><div><p class="eyebrow">A public simulation laboratory for the interstellar medium</p><h1>Learning the ISM<br/><em>with TIGRESS</em></h1><p class="lede">Explore how galactic environment shapes the phases, structure, and self-regulation of the interstellar medium in radiation-MHD simulations.</p><div class="actions"><a class="button" href={link("/explore/")}>Explore simulations</a><a class="button outline" href={link("/releases/")}>View planned release</a></div></div>
-<div class="art" role="img" aria-label="Abstract layered view of a galactic disk"><svg viewBox="0 0 620 470" aria-hidden="true"><defs><radialGradient id="g"><stop stop-color="#f2b84a"/><stop offset=".3" stop-color="#38c8b4" stop-opacity=".7"/><stop offset="1" stop-color="#071521" stop-opacity="0"/></radialGradient></defs><ellipse cx="310" cy="240" rx="270" ry="110" fill="none" stroke="#38c8b4" opacity=".25"/><ellipse cx="310" cy="240" rx="200" ry="80" fill="none" stroke="#38c8b4" opacity=".4"/><ellipse cx="310" cy="240" rx="130" ry="55" fill="url(#g)" opacity=".8"/><path d="M55 260C170 160 225 330 335 220S510 205 570 255" fill="none" stroke="#67ead8" stroke-width="6" opacity=".8"/><path d="M55 220C155 310 250 165 360 265S505 310 570 215" fill="none" stroke="#f2b84a" stroke-width="4" opacity=".8"/><g fill="#fff0bd"><circle cx="130" cy="235" r="4"/><circle cx="210" cy="280" r="5"/><circle cx="295" cy="230" r="4"/><circle cx="385" cy="270" r="5"/><circle cx="485" cy="228" r="4"/></g></svg><small>Synthetic visual placeholder</small></div></section>
-<section class="metrics"><div><small>Release</small><b>v1.0 planned</b></div><div><small>Core suite</small><b>40 models</b></div><div><small>Resolution</small><b>8 pc</b></div><div><small>Transfer</small><b>Globus planned</b></div><div><small>Citation</small><b>DOI pending</b></div></section>
-<section class="section"><div class="intro"><p class="eyebrow dark">Why LIT?</p><h2>From galactic environment to a living, multiphase ISM</h2><p>The portal will connect every executed environment to analysis-ready products, provenance, and reproducible examples.</p></div><div class="cards"><article><span>01</span><h3>Vary the environment</h3><p>Compare gas, stellar gravity, rotation, and shear across a controlled suite.</p></article><article><span>02</span><h3>Resolve the cycle</h3><p>Follow radiation, feedback, chemistry, turbulence, and vertical equilibrium.</p></article><article><span>03</span><h3>Analyze reproducibly</h3><p>Use versioned catalogs, checksums, public readers, and examples.</p></article></div></section>
-<section class="dark-panel"><div><p class="eyebrow">Explore parameter space</p><h2>Find the environment you need</h2><p>Filter a compact catalog, then transfer only the appropriate bundles from Globus.</p><a href={link("/explore/")}>Open the synthetic explorer →</a></div><div class="plot"><i style="--x:14%;--y:24%"></i><i style="--x:34%;--y:40%"></i><i style="--x:56%;--y:58%"></i><i style="--x:80%;--y:78%"></i><small>Σstar → &nbsp; · &nbsp; Ω ↑</small></div></section>
-<section class="section"><div class="intro"><p class="eyebrow dark">A simple path</p><h2>Choose. Transfer. Analyze.</h2></div><ol class="steps"><li><b>1</b><div><h3>Choose</h3><p>Inspect parameters, products, and limitations.</p></div></li><li><b>2</b><div><h3>Transfer</h3><p>Select versioned bundles in Globus.</p></div></li><li><b>3</b><div><h3>Analyze</h3><p>Verify checksums and use public Python tools.</p></div></li></ol></section>
+<Base title="LIT up the ISM research">
+<div class="home">
+<section class="hero">
+<svg class="hero-art" viewBox="0 0 1200 620" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="hero-fade"><stop offset="0" stop-color="#060a12" stop-opacity=".85"/><stop offset=".45" stop-color="#060a12" stop-opacity=".5"/><stop offset=".75" stop-color="#060a12" stop-opacity="0"/></linearGradient></defs><rect width="1200" height="620" fill="#060a12"/><ellipse cx="880" cy="320" rx="420" ry="230" fill="#13284a" opacity=".9"/><ellipse cx="820" cy="290" rx="260" ry="120" fill="#1d4277" opacity=".8"/><ellipse cx="930" cy="360" rx="190" ry="70" fill="#2e6bb8" opacity=".55"/><ellipse cx="780" cy="270" rx="90" ry="38" fill="#6ab0ff" opacity=".55"/><ellipse cx="1010" cy="340" rx="70" ry="26" fill="#e9d46a" opacity=".45"/><circle cx="700" cy="380" r="58" fill="#060a12" opacity=".85"/><circle cx="700" cy="380" r="58" fill="none" stroke="#ff7b4a" stroke-width="2" opacity=".8"/><circle cx="1060" cy="230" r="34" fill="#060a12" opacity=".85"/><circle cx="1060" cy="230" r="34" fill="none" stroke="#ff7b4a" stroke-width="2" opacity=".7"/><rect width="1200" height="620" fill="url(#hero-fade)"/></svg>
+<div class="hero-body">
+<p class="eyebrow">Learning the ISM with TIGRESS · TIGRESS-NCR radiation-MHD</p>
+<h1><span class="lit">LIT</span> up the ISM research</h1>
+<p class="lede">A public simulation laboratory for the interstellar medium. Explore how galactic environment shapes the phases, structure, and self-regulation of the ISM.</p>
+<div class="actions"><a class="button" href={link("/explore/")}>Explore simulations</a><a class="button outline" href={link("/releases/")}>View planned release</a></div>
+<ul class="legend" aria-label="Phase colours"><li><i style="--c:var(--cold)"></i>cold</li><li><i style="--c:var(--warm)"></i>warm</li><li><i style="--c:var(--hot)"></i>hot</li><li>· synthetic visual placeholder</li></ul>
+</div>
+</section>
+
+<dl class="metrics" aria-label="Release at a glance"><div><dt>Release</dt><dd>v1.0 planned</dd></div><div><dt>Core suite</dt><dd>{release.model_count} models</dd></div><div><dt>Resolution</dt><dd>{s.resolution_pc} pc</dd></div><div><dt>3D total</dt><dd>≈{s.suite_3d_tb_estimate} TB est.</dd></div><div><dt>Citation</dt><dd>{release.doi ?? "DOI pending"}</dd></div></dl>
+
+<section class="section"><div class="intro"><p class="eyebrow">Why LIT?</p><h2>From galactic environment to a living, multiphase ISM</h2><p>The portal will connect every executed environment to analysis-ready products, provenance, and reproducible examples.</p></div>
+<div class="tiles"><article><h3>Vary the environment</h3><p>Compare gas, stellar gravity, rotation, and shear across a controlled suite.</p></article><article><h3>Resolve the cycle</h3><p>Follow radiation, feedback, chemistry, turbulence, and vertical equilibrium.</p></article><article><h3>Analyze reproducibly</h3><p>Use versioned catalogs, checksums, public readers, and examples.</p></article></div></section>
+
+<section class="section split"><div><p class="eyebrow">Parameter space</p><h2>Find the environment you need</h2><p>Every point is a galactic environment. Filter the catalog, then transfer only the bundles you need from Globus.</p><a href={link("/explore/")}>Open the explorer →</a></div>
+<figure><svg class="plot" viewBox="0 0 560 360" role="img" aria-label={`Scatter of ${models.length} synthetic models: gas surface density against angular velocity`}>
+<g class="grid">{yTicks.map(t=><line x1={plot.left} x2={plot.right} y1={py(t)} y2={py(t)}/>)}</g>
+<g class="tick">{xTicks.map(t=><text x={px(t)} y={plot.bottom+20} text-anchor="middle">{t}</text>)}{yTicks.map(t=><text x={plot.left-10} y={py(t)+4} text-anchor="end">{t}</text>)}<text x={(plot.left+plot.right)/2} y="348" text-anchor="middle">Σgas (M☉ pc⁻²)</text><text x="14" y={(plot.top+plot.bottom)/2} text-anchor="middle" transform={`rotate(-90 14 ${(plot.top+plot.bottom)/2})`}>Ω (km s⁻¹ kpc⁻¹)</text></g>
+{points.map(p=><g><circle class="pt" cx={p.x} cy={p.y} r="9"><title>{p.label}</title></circle><text class="lbl" x={p.x>plot.right-40?p.x-14:p.x+14} y={p.y+4} text-anchor={p.x>plot.right-40?"end":"start"}>{p.short}</text></g>)}
+</svg><figcaption>Synthetic fixtures, not released metadata.</figcaption></figure></section>
+
+<section class="section"><div class="intro"><p class="eyebrow">A simple path</p><h2>Choose. Transfer. Analyze.</h2></div>
+<ol class="tiles"><li style="--t:var(--cold)"><p class="tag">STEP 1</p><h3>Choose</h3><p>Inspect parameters, products, and limitations.</p></li><li style="--t:var(--warm)"><p class="tag">STEP 2</p><h3>Transfer</h3><p>Select versioned bundles in Globus.</p></li><li style="--t:var(--hot)"><p class="tag">STEP 3</p><h3>Analyze</h3><p>Verify checksums and use public Python tools.</p></li></ol></section>
+</div>
 </Base>
