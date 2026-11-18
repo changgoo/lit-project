@@ -30,3 +30,20 @@ for(const r of catalog.releases){
   for(const bad of ["/projects/","/scratch/","/home/","/tigress/","megatable"])if(text.includes(bad))throw new Error(r.release_id+" contains a private path or restricted name: "+bad);
 }
 console.log("Validated "+catalog.releases.length+" release record(s).");
+
+import {readdir} from "node:fs/promises";
+for(const r of catalog.releases){
+  let inv;try{inv=await read("../catalog/"+r.release_id+"/inventory.json");}catch{continue;}
+  if(inv.release_id!==r.release_id)throw new Error(r.release_id+": inventory release_id mismatch");
+  if(inv.model_count!==r.model_count||inv.models.length!==r.model_count)throw new Error(r.release_id+": inventory has "+inv.models.length+" models, release says "+r.model_count);
+  const sums=new Set(await readdir(new URL("../catalog/"+r.release_id+"/checksums/",import.meta.url)));
+  let files=0;
+  for(const m of inv.models){
+    if(!sums.has(m.model_id+".sha256"))throw new Error(r.release_id+": no checksums for "+m.model_id);
+    const n=Object.values(m.file_counts).reduce((a,b)=>a+b,0);if(n!==m.files)throw new Error(m.model_id+": file counts do not add up");
+    files+=m.files;
+  }
+  if(files!==inv.total_files)throw new Error(r.release_id+": total_files mismatch");
+  if(/\/(projects|scratch|home|tigress)\//.test(JSON.stringify(inv)))throw new Error(r.release_id+": private path in inventory");
+  console.log("Validated inventory of "+inv.models.length+" models ("+inv.total_files+" files) for "+r.release_id+".");
+}

@@ -16,5 +16,10 @@ Requires Node.js 24 or newer.
     npm run check
     npm run build
 
-The GitHub Pages base path is /lit-project/. Private curation stays in LIT and
-bulk payloads stay in immutable Globus release directories.
+The GitHub Pages base path is /lit-project/. Bulk payloads stay in immutable
+Globus release directories; the converter stays in the private LIT repository.
+
+## Release curation
+
+The public curation record for the first release (specification, provenance,
+checklist, inventory, and checksums) is in [`curation/`](curation/README.md).

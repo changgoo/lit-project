@@ -1,0 +1,1781 @@
+{
+ "release_id": "tncr-core-v1.0.0",
+ "generated": "2026-11-18",
+ "converter": "LIT learn-ism-release-convert, commits b1867a1 and 771a96b",
+ "model_count": 40,
+ "total_files": 117840,
+ "total_bytes": 1350861384917,
+ "total_bytes_by_product": {
+  "3d": 987583344067,
+  "history": 13249771190,
+  "metadata": 12611429,
+  "phase_diagrams": 1975252894,
+  "projections": 105883785467,
+  "slices": 166550915570,
+  "star_particles": 452937863,
+  "supernova_log": 474489178,
+  "vertical_profiles": 74678277259
+ },
+ "models": [
+  {
+   "model_id": "R8_8pc_NCR_row0000",
+   "files": 2946,
+   "bytes": {
+    "3d": 25463934136,
+    "history": 331206655,
+    "metadata": 315116,
+    "phase_diagrams": 51986487,
+    "projections": 2650671353,
+    "slices": 4262424481,
+    "star_particles": 13209435,
+    "supernova_log": 15000314,
+    "vertical_profiles": 2023600595
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 47824,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 356451,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0001",
+   "files": 2946,
+   "bytes": {
+    "3d": 24748110805,
+    "history": 331319951,
+    "metadata": 315119,
+    "phase_diagrams": 52047808,
+    "projections": 2648825061,
+    "slices": 4173030723,
+    "star_particles": 9989270,
+    "supernova_log": 9946687,
+    "vertical_profiles": 1991154903
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 31780,
+   "sn_rows_dropped_restart_branches": 1507,
+   "starpar_rows": 260529,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0002",
+   "files": 2946,
+   "bytes": {
+    "3d": 25221978826,
+    "history": 331158653,
+    "metadata": 315118,
+    "phase_diagrams": 53327421,
+    "projections": 2655134238,
+    "slices": 4233368261,
+    "star_particles": 19519631,
+    "supernova_log": 21150325,
+    "vertical_profiles": 2126402990
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 67505,
+   "sn_rows_dropped_restart_branches": 179,
+   "starpar_rows": 502572,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0003",
+   "files": 2946,
+   "bytes": {
+    "3d": 24666147402,
+    "history": 331479564,
+    "metadata": 315098,
+    "phase_diagrams": 45038262,
+    "projections": 2627571548,
+    "slices": 4144606641,
+    "star_particles": 3934093,
+    "supernova_log": 3367450,
+    "vertical_profiles": 1896301074
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 10748,
+   "sn_rows_dropped_restart_branches": 261,
+   "starpar_rows": 103899,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0004",
+   "files": 2946,
+   "bytes": {
+    "3d": 23984152153,
+    "history": 331097516,
+    "metadata": 315116,
+    "phase_diagrams": 45442560,
+    "projections": 2658046407,
+    "slices": 4052527621,
+    "star_particles": 3124842,
+    "supernova_log": 2077490,
+    "vertical_profiles": 1661083666
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 6652,
+   "sn_rows_dropped_restart_branches": 288,
+   "starpar_rows": 79256,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0005",
+   "files": 2946,
+   "bytes": {
+    "3d": 25192443403,
+    "history": 331773243,
+    "metadata": 315518,
+    "phase_diagrams": 57124757,
+    "projections": 2670630096,
+    "slices": 4215121669,
+    "star_particles": 18806042,
+    "supernova_log": 20181265,
+    "vertical_profiles": 2202861568
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 64443,
+   "sn_rows_dropped_restart_branches": 18693,
+   "starpar_rows": 486066,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0006",
+   "files": 2946,
+   "bytes": {
+    "3d": 24574023908,
+    "history": 331147628,
+    "metadata": 315517,
+    "phase_diagrams": 49942170,
+    "projections": 2652226137,
+    "slices": 4183092486,
+    "star_particles": 16601891,
+    "supernova_log": 20273428,
+    "vertical_profiles": 1744441316
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 64811,
+   "sn_rows_dropped_restart_branches": 6411,
+   "starpar_rows": 444144,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0007",
+   "files": 2946,
+   "bytes": {
+    "3d": 25326113756,
+    "history": 331560325,
+    "metadata": 315515,
+    "phase_diagrams": 49448247,
+    "projections": 2641665202,
+    "slices": 4226297466,
+    "star_particles": 5126412,
+    "supernova_log": 4805385,
+    "vertical_profiles": 2114160547
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 15338,
+   "sn_rows_dropped_restart_branches": 50,
+   "starpar_rows": 138130,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0008",
+   "files": 2946,
+   "bytes": {
+    "3d": 25064095332,
+    "history": 331245040,
+    "metadata": 315517,
+    "phase_diagrams": 49681826,
+    "projections": 2644008770,
+    "slices": 4201045657,
+    "star_particles": 8155186,
+    "supernova_log": 8039296,
+    "vertical_profiles": 2000519750
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 25725,
+   "sn_rows_dropped_restart_branches": 1409,
+   "starpar_rows": 212200,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0009",
+   "files": 2946,
+   "bytes": {
+    "3d": 24268957629,
+    "history": 331206058,
+    "metadata": 315514,
+    "phase_diagrams": 48973865,
+    "projections": 2662558236,
+    "slices": 4094484414,
+    "star_particles": 6411183,
+    "supernova_log": 5614122,
+    "vertical_profiles": 1838657407
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 17971,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 170150,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0010",
+   "files": 2946,
+   "bytes": {
+    "3d": 25834608807,
+    "history": 331219503,
+    "metadata": 315120,
+    "phase_diagrams": 54497210,
+    "projections": 2665759051,
+    "slices": 4315151236,
+    "star_particles": 28114998,
+    "supernova_log": 34218281,
+    "vertical_profiles": 2152070755
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 109283,
+   "sn_rows_dropped_restart_branches": 7353,
+   "starpar_rows": 745516,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0011",
+   "files": 2946,
+   "bytes": {
+    "3d": 24498868372,
+    "history": 331419877,
+    "metadata": 315134,
+    "phase_diagrams": 45395244,
+    "projections": 2623598492,
+    "slices": 4104134232,
+    "star_particles": 2831796,
+    "supernova_log": 2076318,
+    "vertical_profiles": 1863206804
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 6634,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 75198,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0012",
+   "files": 2946,
+   "bytes": {
+    "3d": 24029152290,
+    "history": 330805614,
+    "metadata": 315116,
+    "phase_diagrams": 42564570,
+    "projections": 2629989302,
+    "slices": 4094867032,
+    "star_particles": 5918855,
+    "supernova_log": 5057569,
+    "vertical_profiles": 1318133938
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 16168,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 152197,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0013",
+   "files": 2946,
+   "bytes": {
+    "3d": 25369890443,
+    "history": 331536534,
+    "metadata": 315118,
+    "phase_diagrams": 55219609,
+    "projections": 2655418046,
+    "slices": 4241243163,
+    "star_particles": 11865036,
+    "supernova_log": 12358784,
+    "vertical_profiles": 2266859342
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 39409,
+   "sn_rows_dropped_restart_branches": 813,
+   "starpar_rows": 314503,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0014",
+   "files": 2946,
+   "bytes": {
+    "3d": 24162021814,
+    "history": 331348621,
+    "metadata": 315136,
+    "phase_diagrams": 50131690,
+    "projections": 2662514003,
+    "slices": 4090253407,
+    "star_particles": 10405259,
+    "supernova_log": 10149708,
+    "vertical_profiles": 1742869666
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 32518,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 269784,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0015",
+   "files": 2946,
+   "bytes": {
+    "3d": 24959166880,
+    "history": 331442305,
+    "metadata": 315116,
+    "phase_diagrams": 50769647,
+    "projections": 2645151955,
+    "slices": 4201035592,
+    "star_particles": 8377138,
+    "supernova_log": 8246185,
+    "vertical_profiles": 2131779550
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 26389,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 219260,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0016",
+   "files": 2946,
+   "bytes": {
+    "3d": 24722546399,
+    "history": 331311161,
+    "metadata": 315516,
+    "phase_diagrams": 49986958,
+    "projections": 2651700344,
+    "slices": 4181427969,
+    "star_particles": 10986963,
+    "supernova_log": 11182139,
+    "vertical_profiles": 1853038919
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 35768,
+   "sn_rows_dropped_restart_branches": 629,
+   "starpar_rows": 290839,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0017",
+   "files": 2946,
+   "bytes": {
+    "3d": 25237613526,
+    "history": 331742873,
+    "metadata": 315498,
+    "phase_diagrams": 54432378,
+    "projections": 2653915282,
+    "slices": 4239066828,
+    "star_particles": 12596032,
+    "supernova_log": 13653203,
+    "vertical_profiles": 2171954337
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 43592,
+   "sn_rows_dropped_restart_branches": 11167,
+   "starpar_rows": 338418,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0018",
+   "files": 2946,
+   "bytes": {
+    "3d": 22955277494,
+    "history": 330517499,
+    "metadata": 315517,
+    "phase_diagrams": 46140856,
+    "projections": 2657838619,
+    "slices": 3995572040,
+    "star_particles": 24081346,
+    "supernova_log": 25457256,
+    "vertical_profiles": 1136407954
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 81583,
+   "sn_rows_dropped_restart_branches": 7467,
+   "starpar_rows": 598412,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0019",
+   "files": 2946,
+   "bytes": {
+    "3d": 24801807213,
+    "history": 331569608,
+    "metadata": 315493,
+    "phase_diagrams": 43625119,
+    "projections": 2605217539,
+    "slices": 4168126651,
+    "star_particles": 1784435,
+    "supernova_log": 1223848,
+    "vertical_profiles": 1976248050
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 3898,
+   "sn_rows_dropped_restart_branches": 57,
+   "starpar_rows": 48600,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0020",
+   "files": 2946,
+   "bytes": {
+    "3d": 25017159308,
+    "history": 331108380,
+    "metadata": 315514,
+    "phase_diagrams": 47496657,
+    "projections": 2641274948,
+    "slices": 4224227952,
+    "star_particles": 8590212,
+    "supernova_log": 8667053,
+    "vertical_profiles": 1867808212
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 27716,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 224034,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0021",
+   "files": 2946,
+   "bytes": {
+    "3d": 24691591559,
+    "history": 331254030,
+    "metadata": 315139,
+    "phase_diagrams": 54680942,
+    "projections": 2668825769,
+    "slices": 4146382088,
+    "star_particles": 13761534,
+    "supernova_log": 14542993,
+    "vertical_profiles": 2071277969
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 46457,
+   "sn_rows_dropped_restart_branches": 5098,
+   "starpar_rows": 364157,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0022",
+   "files": 2946,
+   "bytes": {
+    "3d": 25980865665,
+    "history": 331471489,
+    "metadata": 315119,
+    "phase_diagrams": 54009548,
+    "projections": 2653567140,
+    "slices": 4333391082,
+    "star_particles": 15399004,
+    "supernova_log": 17245161,
+    "vertical_profiles": 2226062946
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 55075,
+   "sn_rows_dropped_restart_branches": 6953,
+   "starpar_rows": 414454,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0023",
+   "files": 2946,
+   "bytes": {
+    "3d": 24642899672,
+    "history": 331675588,
+    "metadata": 315116,
+    "phase_diagrams": 49695142,
+    "projections": 2650217980,
+    "slices": 4150883390,
+    "star_particles": 6232857,
+    "supernova_log": 6005808,
+    "vertical_profiles": 1919035176
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 19209,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 166381,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0024",
+   "files": 2946,
+   "bytes": {
+    "3d": 24636593129,
+    "history": 330865457,
+    "metadata": 315118,
+    "phase_diagrams": 46130106,
+    "projections": 2652167510,
+    "slices": 4176511753,
+    "star_particles": 12536250,
+    "supernova_log": 12164686,
+    "vertical_profiles": 1683891115
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 38918,
+   "sn_rows_dropped_restart_branches": 705,
+   "starpar_rows": 318127,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0025",
+   "files": 2946,
+   "bytes": {
+    "3d": 25240933586,
+    "history": 331544721,
+    "metadata": 315116,
+    "phase_diagrams": 52083816,
+    "projections": 2650285078,
+    "slices": 4197809098,
+    "star_particles": 7054244,
+    "supernova_log": 6785331,
+    "vertical_profiles": 2149956227
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 21685,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 185485,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0026",
+   "files": 2946,
+   "bytes": {
+    "3d": 25324672743,
+    "history": 331323835,
+    "metadata": 315517,
+    "phase_diagrams": 54869073,
+    "projections": 2662185528,
+    "slices": 4247094768,
+    "star_particles": 25096714,
+    "supernova_log": 29167711,
+    "vertical_profiles": 2154022511
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 93162,
+   "sn_rows_dropped_restart_branches": 7386,
+   "starpar_rows": 654126,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0027",
+   "files": 2946,
+   "bytes": {
+    "3d": 24960590683,
+    "history": 331461288,
+    "metadata": 315514,
+    "phase_diagrams": 48154921,
+    "projections": 2635641217,
+    "slices": 4182610726,
+    "star_particles": 5291137,
+    "supernova_log": 4857935,
+    "vertical_profiles": 2017184897
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 15522,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 141320,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0028",
+   "files": 2946,
+   "bytes": {
+    "3d": 24539649029,
+    "history": 331286229,
+    "metadata": 315515,
+    "phase_diagrams": 45911446,
+    "projections": 2624918383,
+    "slices": 4134202114,
+    "star_particles": 4089435,
+    "supernova_log": 3591419,
+    "vertical_profiles": 1830958704
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 11468,
+   "sn_rows_dropped_restart_branches": 55,
+   "starpar_rows": 108854,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0029",
+   "files": 2946,
+   "bytes": {
+    "3d": 24698758875,
+    "history": 331481892,
+    "metadata": 315537,
+    "phase_diagrams": 52998575,
+    "projections": 2662192230,
+    "slices": 4162148908,
+    "star_particles": 14207826,
+    "supernova_log": 15115437,
+    "vertical_profiles": 1984323204
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 48389,
+   "sn_rows_dropped_restart_branches": 2476,
+   "starpar_rows": 378970,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0030",
+   "files": 2946,
+   "bytes": {
+    "3d": 25312663602,
+    "history": 331128326,
+    "metadata": 315537,
+    "phase_diagrams": 52609592,
+    "projections": 2657079944,
+    "slices": 4253483784,
+    "star_particles": 20264461,
+    "supernova_log": 22902221,
+    "vertical_profiles": 1972843196
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 73076,
+   "sn_rows_dropped_restart_branches": 6213,
+   "starpar_rows": 522311,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0031",
+   "files": 2946,
+   "bytes": {
+    "3d": 23796430986,
+    "history": 331033978,
+    "metadata": 315116,
+    "phase_diagrams": 45503533,
+    "projections": 2608020028,
+    "slices": 4038075247,
+    "star_particles": 2977968,
+    "supernova_log": 1850278,
+    "vertical_profiles": 1637147387
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 5906,
+   "sn_rows_dropped_restart_branches": 333,
+   "starpar_rows": 76498,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0032",
+   "files": 2946,
+   "bytes": {
+    "3d": 25474889332,
+    "history": 331314806,
+    "metadata": 315116,
+    "phase_diagrams": 54046065,
+    "projections": 2651854494,
+    "slices": 4271263740,
+    "star_particles": 14938957,
+    "supernova_log": 16505298,
+    "vertical_profiles": 2145912381
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 52653,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 401321,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0033",
+   "files": 2946,
+   "bytes": {
+    "3d": 24092684719,
+    "history": 330843635,
+    "metadata": 314638,
+    "phase_diagrams": 48744386,
+    "projections": 2658974402,
+    "slices": 4136366570,
+    "star_particles": 31042945,
+    "supernova_log": 36404919,
+    "vertical_profiles": 1553148859
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 116546,
+   "sn_rows_dropped_restart_branches": 2481,
+   "starpar_rows": 807286,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0034",
+   "files": 2946,
+   "bytes": {
+    "3d": 22975002565,
+    "history": 330672406,
+    "metadata": 315136,
+    "phase_diagrams": 48785314,
+    "projections": 2695698353,
+    "slices": 3999118198,
+    "star_particles": 17025216,
+    "supernova_log": 15417729,
+    "vertical_profiles": 1172864654
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 49448,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 425840,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0035",
+   "files": 2946,
+   "bytes": {
+    "3d": 23281008021,
+    "history": 330645673,
+    "metadata": 315116,
+    "phase_diagrams": 43299165,
+    "projections": 2674897062,
+    "slices": 4009044957,
+    "star_particles": 8002565,
+    "supernova_log": 6375675,
+    "vertical_profiles": 1168660310
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 20448,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 195552,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0036",
+   "files": 2946,
+   "bytes": {
+    "3d": 24013054385,
+    "history": 330851500,
+    "metadata": 315116,
+    "phase_diagrams": 47844456,
+    "projections": 2656865563,
+    "slices": 4107736848,
+    "star_particles": 16409592,
+    "supernova_log": 16832940,
+    "vertical_profiles": 1452259859
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 53884,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 421620,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0037",
+   "files": 2946,
+   "bytes": {
+    "3d": 23880064434,
+    "history": 331075880,
+    "metadata": 315513,
+    "phase_diagrams": 44089667,
+    "projections": 2621888055,
+    "slices": 4024502830,
+    "star_particles": 3918677,
+    "supernova_log": 2730378,
+    "vertical_profiles": 1640802879
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 8737,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 100474,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0038",
+   "files": 2946,
+   "bytes": {
+    "3d": 25202526701,
+    "history": 331296467,
+    "metadata": 315512,
+    "phase_diagrams": 45678985,
+    "projections": 2613781100,
+    "slices": 4191793555,
+    "star_particles": 2576838,
+    "supernova_log": 2094062,
+    "vertical_profiles": 1951901441
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 6649,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 69655,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  },
+  {
+   "model_id": "R8_8pc_NCR_row0039",
+   "files": 2946,
+   "bytes": {
+    "3d": 24740394485,
+    "history": 331327382,
+    "metadata": 315512,
+    "phase_diagrams": 42844821,
+    "projections": 2581011002,
+    "slices": 4147390393,
+    "star_particles": 1681588,
+    "supernova_log": 1153091,
+    "vertical_profiles": 1866462201
+   },
+   "file_counts": {
+    "3d": 102,
+    "history": 20,
+    "metadata": 2,
+    "phase_diagrams": 1,
+    "projections": 701,
+    "slices": 2103,
+    "star_particles": 1,
+    "supernova_log": 1,
+    "vertical_profiles": 15
+   },
+   "snapshots_3d": {
+    "first": "0020",
+    "last": "0070",
+    "count": 51
+   },
+   "outputs_2d": 701,
+   "history_rows": 7001,
+   "sn_events": 3663,
+   "sn_rows_dropped_restart_branches": 0,
+   "starpar_rows": 46496,
+   "pdf2d_weights": [
+    "volume",
+    "mass",
+    "nHI",
+    "nH2",
+    "ne",
+    "Pmag"
+   ]
+  }
+ ]
+}
